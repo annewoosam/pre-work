@@ -1,0 +1,14 @@
+# Make a list of animals. You can call the list whatever you like, but animals would be a safe bet.
+
+# Make another list, an empty one this time, called k_list.
+
+# Then write code to loop over the animals list. If you find a value that starts with the letter k, append it to k_list. After the loop has completed, print k_list.
+
+animals = []
+k_list = []
+def kanimals(animals):
+    for animal in animals:
+        if animal.startswith('k'):
+            k_list.append(animal)
+    return k_list
+print(kanimals(["kangaroo","koala","antelope","elephant","giraffe"]))

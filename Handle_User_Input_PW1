@@ -1,0 +1,48 @@
+# 1) Handle User Input
+# Asks a user to fill in some information about themselves (using input() to gather the information and assign it to variables). Use f-strings, input(), and variable assignment that you learned from this section’s readings.
+# We’d like your file to ask and store the user’s answers to the following questions:
+# What’s your first name?
+# What’s your last name?
+# What’s your favorite color?
+# How many pets do you have?
+# And then have it print a greeting that includes those values once they are collected.
+# It should look similar to this when you run it in repl.it:
+# Tell us your first name: Balloonicorn
+# Tell us your last name: Thegreat
+# Tell us your favorite color: purple
+# Tell us how many pets you have: 2000
+# Great! So your name is Balloonicorn Thegreat, your favorite color is
+# purple and you have 2000 pets. Nice to meet you!
+first_name=input("Tell us your first name:>")
+last_name=input("Tell us your last name:>")
+favorite_color=input("Tell us your favorite color:>")
+number_of_pets=input("Tell us how many pets you have:>")
+print("Great! So your name is {} {}, your favorite color is {} and you have {} pets. Nice to meet you!".format(first_name,last_name,favorite_color,number_of_pets))
+# 2) Formatting text
+# Copy the following line of python into your repl.it session.
+
+paragraph = "An invitation to dinner was soon afterwards dispatched; and already had Mrs. Bennet planned the courses that were to do credit to her housekeeping, when an answer arrived which deferred it all. Mr. Bingley was obliged to be in town the following day, and, consequently, unable to accept the honour of their invitation, etc. Mrs. Bennet was quite disconcerted."
+first_ten = paragraph[:10]
+
+average_rating = 4.56789123
+# Use string formatting to print the following (bonus points if you use f-strings instead of str.format()!):
+print("{}...".format(first_ten))
+# The first ten characters of the variable paragraph followed by an elipsis (...)
+
+# The first 3 digits of the average_rating variable.
+
+# The desired output is:
+
+# An invitat...
+# 4.57
+print("%.2f" % average_rating)
+#adapted from https://stackoverflow.com/questions/455612/limiting-floats-to-two-decimal-points
+
+# 3) Discussion Question
+# Using Python comment syntax (prepend the line with a #) at the bottom of your repl.it session answer the following question:
+
+# Why is the following Python invalid?
+
+# first_name = "Sally"
+# first_name[0] = "C"
+# because the character at index o is S not C.

@@ -1,0 +1,51 @@
+# based on source and https://repl.it/@JustinCowen/Choose-Your-Own-Adventure-Game#main.py using forking as a test 
+# Opening Scene and Scenarios (minimum 2). Bad story and choices my own. All parentheses arund print statements added by me for Python. Nothing is raw( raw-input wise) here.
+print('You enter a castle hallway with two doors. Do you want to enter door #1 or door #2?')
+door = input('> ') 
+# raw_input means that it will accept 'Any' Given Varible,
+# Of course this will only work if the script down below has a use for the varibles you have inputed,
+#if not the program will say 'Syntax Error'.
+if door == "1":
+    print('There is an ogre snoring in front of a chest of gold.')
+    print('what do you want to do?')
+    print('#1 Go for the gold.')
+    print('#2 Get out of the room right now.')
+    print('#3 Hide. You will try get out of the room later.')
+
+    choice = input('> ')
+
+    if choice == "1":
+        print('The ogre appears to be waking up. What do you do?')
+        print('#1 duck under the table, hoping he will fall back asleep.')
+        print('#2 exit the room immediately.')
+
+        ogre = input('> ')
+
+        if ogre == "1":
+          print('The ogre kicks you, awakes and traps you then sends you to the dungeon.')
+
+        elif ogre == "2":
+          print('The ogre catches you tripping on a chair and sends you to the dungeon.')
+        # sometimes there are no happy endings, right?
+
+    elif choice == "2":
+        print('You run right into a guard and are sent to the dungeon.')
+
+    else:
+        print('Well, you will survive!')
+elif door == "2":
+    print('A woman playing a harp greets you.')
+    print('You react by:.')
+    print('#1. smiling.')
+    print('#2. excusing yourself.')
+    print('#3. asking where she learned to play the harp.')
+    harpist = input('> ')
+
+    if harpist == "1" or "2":
+        print('She enocurages you to stay so she can teach you the mysteries of the castle.')
+
+    else:
+        print('She pushes you out the door.')
+
+else:
+    print('You flee the castle, ready to play another day!')

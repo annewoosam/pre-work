@@ -1,0 +1,42 @@
+# yourlastname_translator.py.
+
+# Make a dictionary with 10 or so items (key/value pairs) whose keys are in English, and whose values are in another language you know (or make up). Each key/value pair will be an English word and its translation in your chosen language. You can call this dictionary whatever you want, but an example would be english_to_mermish.
+
+# Below your dictionary, write a function called translate that takes an English word. Inside this function, use a conditional statement (remember those?) to (a) return the translation if the word is in your dictionary, or (b) return a message like 'Oh no! That word doesn't exist in Mermish!' if the word is not in your dictionary.
+
+# Call the function you just created, passing in an English word from your dictionary, and save the output to a new variable. Print that variable.
+
+# Make another function call, this time with an English word not in your dictionary. As above, save the output to a variable, and print the variable.
+
+# our file will be renamed woo-sam_translator.py
+# it will translate English to gibberish
+# There are 10 words in the top_ten_gibberish_words dictionary
+# save to new variable 
+# print variable
+# if a word isnt found reply " I am sorry. My dictionary is not yet able to translate this word from English to Gibberish."
+print("English to Gibberish Dictionary\n")
+gibberish_dict = {
+    'red':'kokkino',
+    'light':'fos',
+    'home':'spedi',
+    'sweet':'onera',
+    'dreams':'eglika',
+    'good':'kala',
+    'girl':'kori',
+    'fish':'psari',
+    'bread':'psomi',
+    'watermelon':'carpuzzi',
+    'thank you':'efharisto'
+    }
+# yes, it's all Greek to me...
+search_term = (input("What English term do you need to translate into Gibberish?>"))
+
+# python check if key in dict using "in"
+if search_term in gibberish_dict:
+    print(f"Hurrah! The word '{search_term}' exists in our dictionary. The Gibberish translation is {gibberish_dict.get(search_term)}.")
+else:
+    print("I am sorry. My dictionary is not yet able to translate this word from English to Gibberish.") 
+
+        
+        
+        
